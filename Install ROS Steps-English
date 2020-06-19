@@ -1,0 +1,135 @@
+HELLO EVEYONE!! THIS IS MY APPROCH FOR INSTALLING ROS(Robot Operating System)
+Fisrt this method is for WINDOWS USERS ^-*!
+
+
+--------------------------------------------
+SUMMARY: //Here is the summary of our story!
+1-linux ubuntu //You have three ways you can choose whatever you want...
+ 1-Creating a bootable USB stick on Windows
+ 2-Dual boot Linux Ubuntu
+ 3-Virtualbox for windows
+   1-install Ubuntu on the Virtualbox
+2-ROS on Linux Ubuntu
+--------------------------------------------
+As I used all these methods I am going to describe it and give my opinon at the end!
+Are you ready? //Here we GO!
+First in order to have ROS on your windows you need linux! //Unfortunately this is right but it's a lot of FUN!
+for our puropse we are going to install linux Ubuntu disribution as we know there is three popular ways to install it: 
+
+#1 A BOOTABLE USB STICK //Basically, this method is about working on Ubuntu by plugging your USB device to your computer!
+ 1-Download Rufus Go to this link>> https://rufus.ie/ 
+ 2-Download the image of Ubuntu Go to this link>> https://ubuntu.com/download/desktop#download
+ 3-You should have a USB drive with ate least 2GB of free space //be sure to save all your files in somewhere as all the files 
+   will be erased, so back up any important files first plz!
+ 
+ The process: 
+ 1-Plug your USB drive to your PC
+ 2-Open Rufus>> choose your USB drive
+ 3-Click select an image: the image of Ubuntu 
+ 4-click Start!
+  ok
+  ok
+  ok
+ 5-Restart your PC
+ 6-Booting from USB drive and installing Ubuntu
+ 7-simple steps to install Ubuntu and have FUN!
+ 
+#2 Dual boot Linux Ubuntu //Basically, this method is about having two OS on your device!!
+1-Download the image of Ubuntu Go to this link>> https://ubuntu.com/download/desktop#download
+2-Create free space on your PC hard disk
+
+The process: 
+1-open Command Prompt in your PC from Start Menu
+2-write this code: diskmgmt.msc //this will open the Disk Management
+3-Select C:>>Shrink volume>> enter a value on space in MB //the value is depending on the C: partition size>>Click Shrink
+4-Burn the image of Ubuntu by using Rufus like the method above
+5-Booting from the USB drive
+6-Click:
+  Normal installtion>>Something else>> continue
+7-Create two partitions onr for ROOT and the other for HOME:
+  free space for root at lease 20000 MB
+  free space for home all remaining space!
+8-Click:
+  Continue>>choose your location
+9-Type your name and password
+10-simple steps continue and restart
+
+Now each time when I turn the pc on I click F12 then I choose Windows or Ubuntu
+
+#3 VIRTUALBOX FOR WINDOWS 10 //Basically, this method is about using this box and downloas Ubuntu and you can use Ubuntu on the windows System
+1-Downloading...
+the process: 
+1-Donlowd the Orcale VM Box Go to this link>>https://www.virtualbox.org/wiki/Downloads
+2-Click Windows hosts
+after downloading is completed..
+3-Click:
+  Next
+  Next
+  Next
+  ..
+  install
+  Finish
+   
+OK Now you have VirtualBox on your PC but you  do not have Ubuntu! 
+To install Ubuntu:
+1-Download the image of Ubuntu Go to this link>> https://ubuntu.com/download/desktop#download
+2-Select New
+  Write Ubuntu as a Name>Select Next
+3-Choose the RAM then Next
+4-Select Create
+5-Choose VirtualBox Disk Image>>select Next
+6-Choose Dynamically allocated >> select Next
+7-Choose how muxh space do you want for the Ubuntu
+
+Then..
+8-Click on the Ubuntu and choose the image of Ubuntu
+9-Choose Install Ubuntu
+10-Simple steps to complete the installtion.
+--------------------------------------------------------------------------------------
+FINALLY, THESE ARE DIFFTRENT WAYS TO REACH THE SAME GOAL WHICH IS WORKING ON UBUNTU. FROM MY PRESPECTIVE,THE SECOND METHOD IS THE 
+MOST DIFFICULT PART AND IT HAS AN EFFECT ON THE PERFORMANCE OF YOUR PC. HOWEVER, I PREFER IT AS I CAN USE UBUNTU EASILY WITHOUT
+THE NEED TO EXTERNAL USB OR USING THE VM BOX WHICH IS SLOW AND MAKES ME NERVOUS!! BUT I CAN SAY THE THE VM BOX IS VERY SIMPLE AND 
+EASY TO FOLLOW THEN THE BOOTABLE USB. IT'S ALSO INTERSITING TO NOTE THAT, MAYBE THE BOOTABLE USB IS MORE SAFE FOR YOUR DEVICE
+AT THE END YOU ARE FREE TO CHOOSE.....
+--------------------------------------------------------------------------------------
+
+GOOD WORK....! 
+After we finished Ubuntu instaltion part NOW let's download ROS and this step is working for all previous methods!
+Because we will install ROS on Ubuntu
+First:
+It is important to note that the disribution of ROS is depending on the version of the Ubuntu in my case my Ubuntu was 18.04 
+but I followed this link to upgrade my ubuntu 18.04 to 20 >>https://ubuntu.com/blog/how-to-upgrade-from-ubuntu-18-04-lts-to-20-04-lts-today
+ Now lets install ROS Noetic://this is just for ubuntu 20.04 version
+ 1-Opent the terminal command
+ 2-copy and paste: wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_install_noetic.sh && chmod +x ./ros_install_noetic.sh && ./ros_install_noetic.sh
+ 3-type 1 for installing the full Desktop
+ 4-type rosversion -d //output should be: neotic
+ 5-type: roscore
+ 6-rosrun roscpp_tutorials talker
+ 7-rosrun roscpp_tutorials listener
+ 
+ 
+ 
+ Refrences: 
+ https://www.youtube.com/watch?v=IqrpSi2Xueg&feature=youtu.be
+ https://www.linuxtechi.com/upgrade-ubuntu-18-04-lts-to-ubuntu-20-04-lts/
+ https://www.tecmint.com/install-ubuntu-alongside-with-windows-dual-boot/
+ https://www.lifewire.com/install-ubuntu-linux-windows-10-steps-2202108
+ https://www.howtogeek.com/howto/linux/create-a-bootable-ubuntu-usb-flash-drive-the-easy-way/
+ https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-ubuntu#1-overview
+ https://www.ionos.com/digitalguide/server/know-how/make-a-bootable-usb-drive/
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
